@@ -4,10 +4,10 @@ lCase = "abcdefghijklmnopqrstuvwxyz",
 number = "0123456789",
 symbol = "!@#$%^&*=-_";
 
-const pLength = dcoument.getElementById("p-length"),
-upperCase = dcoument.getElementById("p-uppercase"),
-lowerCase = dcoument.getElementById("p-lowercase"),
-pNumber = dcoument.getElementById("p-number"),
-pSymbol = dcoument.getElementById("p-symbol"),
-submit = dcoument.getElementById("submit"),
-password = dcoument.getElementById("password");
+const pLength = document.getElementById("p-length"),
+upperCase = document.getElementById("p-uppercase"),
+lowerCase = document.getElementById("p-lowercase"),
+pNumber = document.getElementById("p-number"),
+pSymbol = document.getElementById("p-symbol"),
+submit = document.getElementById("submit"),
+password = document.getElementById("password");
