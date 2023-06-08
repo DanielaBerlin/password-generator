@@ -10,7 +10,9 @@ lowerCase = document.getElementById("p-lowercase"),
 pNumber = document.getElementById("p-number"),
 pSymbol = document.getElementById("p-symbol"),
 submit = document.getElementById("submit"),
-password = document.getElementById("password");
+password = document.getElementById("password"),
+copy = document.getElementById("copy");
+
 
 submit.addEventListener("click", () => {
     let initialPassword = empty;
@@ -36,3 +38,15 @@ function generatePassword(l, initialPassword) {
 
 // let str = "Hello";
 // let result = str.charAt(0); // H
+
+//Copy function
+
+copy.addEventListener("click", () => {
+    if (password.value == "") {
+        alert("Please generate a password")
+    }else{
+        password.select();
+        document.execCommand("copy")
+        alert("Password has been copied to clipboard 🌟");
+    }
+})
